@@ -1,14 +1,4 @@
 
-/*const slider = new A11YSlider(document.querySelector('.slider'), {
-  adaptiveHeight: false,
-  dots: true,
-  arrows:false,
-  responsive: {
-    800: {
-      dots:false,
-    },
-  }
-});*/
 
 const navToggle=document.querySelector(".nav-toggle");
 const prNav=document.querySelector(".navbar");
@@ -21,6 +11,17 @@ navToggle.addEventListener("click", () =>{
   });
 
 });
+const slider = new A11YSlider(document.querySelector('.slider'), {
+  adaptiveHeight: false,
+  dots: true,
+  arrows:true,
+  responsive: {
+    800: {
+      dots:true,
+    },
+  }
+});
+
 /*navToggle.addEventListener("click", () =>{
   const visibilty=prNav.getAttribute("data-visible");
   if(visibilty==="false"){

@@ -268,10 +268,9 @@ display: block;
     
     .slider > * {
         width: 33.33%;
+        flex: 0 0 auto;
       }
-      .slider > * {
-        width: 50%;
-      }
+      
       .footer{
         padding: 20px 40px 20px 40px;
         background-color:var(--Very-Dark-Blue) ;
