@@ -247,11 +247,6 @@ display: block;
     margin: 0 6px;
     color: #fff;
 }
-.a11y-slider-dots{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
 .a11y-slider-dots li button {
     display: block;
     font-size: 0;
@@ -264,11 +259,19 @@ display: block;
 .a11y-slider-dots li button.active{
     background-color: var(--Bright-Red);
 }
+.a11y-slider-prev{
+    text-indent: -99999;
+}
+@media (min-width: 568px){
+    
+    .slider > * {
+        width: 50%;
+      }
+    }
   @media (min-width: 768px){
     
     .slider > * {
         width: 33.33%;
-        flex: 0 0 auto;
       }
       
       .footer{
@@ -409,16 +412,12 @@ display: block;
         padding-left: 50px;
         width: 120px;
     }
-    svg .logo{
-
-    }
+   
     .copywright{
         grid-area: copywright;
         margin-bottom: 20px;
     }
-    .footer-nav ul li{
-        text-align: center;
-    }
+    
     .input-email{
         text-align: center;
     }
@@ -524,9 +523,6 @@ display: block;
     text-decoration: none;
     color: var(--Dark-Grayish-Blue);
     line-height: 3px;
-    
-}
-.footer-nav ul li{
     
 }
 .footer-form{

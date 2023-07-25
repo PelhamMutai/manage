@@ -8,25 +8,20 @@ navToggle.addEventListener("click", () =>{
   prNav.classList.toggle("open");
   toggIcon.forEach(icon =>{
     icon.classList.toggle("close");
+    navbar.toggleAttribute("overlay");
   });
 
 });
+
 const slider = new A11YSlider(document.querySelector('.slider'), {
   adaptiveHeight: false,
   dots: true,
-  arrows:true,
+  arrows:false,
   responsive: {
-    800: {
-      dots:true,
-    },
+  768: {
+    
+    slidesToShow: 3,
+    dots: false
   }
-});
-
-/*navToggle.addEventListener("click", () =>{
-  const visibilty=prNav.getAttribute("data-visible");
-  if(visibilty==="false"){
-    prNav.setAttribute("data-visible", true);
-}else if(visibilty==="true"){ 
-  prNav.setAttribute("data-visible", false);
 }
-});*/
+});
