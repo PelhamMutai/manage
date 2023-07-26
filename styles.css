@@ -335,7 +335,6 @@ display: block;
 }
 
 
-
 @media (min-width: 568px){
     
     .slider > * {
@@ -404,7 +403,7 @@ display: block;
         display: block;
       overflow: hidden;
       background-color: rgb(245, 241, 247);
-      box-shadow:0 0 100vmax rgba(11, 10, 11);
+      box-shadow:0 0 100vmax rgb(11, 1, 11);
       
     }
 
@@ -426,7 +425,7 @@ display: block;
         padding-top:25px;
     }
     .nav-toggle{
-        position: absolute;
+        position: fixed;
         display: block;
         right: 120px;
         border: 0;
@@ -510,9 +509,14 @@ display: block;
 .carousel-footer{
     display: flex;
     background-color: var(--Bright-Red);
-    padding: 30px 60px;
+    padding: 30px 90px;
     justify-content: space-between;
     align-items: center;
+    background-image: url("images/bg-simplify-section-desktop.svg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y:bottom;
+    background-position-x:9rem;
 }
 .carousel-footer-text h2{
     color: var(--Vary-Light-Gray);
@@ -529,6 +533,9 @@ display: block;
     padding: 10px 20px;
     box-shadow: 1px 4px 13px var(--Bright-Red);
 }
+.carousel-footer-text img{
+    padding-left: 100px;
+}
 
 /* footer */
 
@@ -536,10 +543,19 @@ display: block;
     background-color:var(--Very-Dark-Blue) ;
     color: var(--Vary-Light-Gray);
 }
+.footer .social-icon  div img:hover{
+    cursor: pointer;
+    background-color: var(--Bright-Red);
+}
 .footer-nav{
     grid-area: footer-nav;
 }
-
+.footer-nav li .active{
+    color: blue;
+}
+.footer-nav li a:hover{
+    color: var(--Bright-Red);
+}
 
 .input-email{
     grid-area: input-email;

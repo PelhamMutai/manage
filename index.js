@@ -1,5 +1,5 @@
 
-
+const navList=document.querySelector(".nav-list");
 const navToggle=document.querySelector(".nav-toggle");
 const prNav=document.querySelector(".navbar");
 const toggIcon=document.querySelectorAll(".icon");
@@ -8,7 +8,7 @@ navToggle.addEventListener("click", () =>{
   prNav.classList.toggle("open");
   toggIcon.forEach(icon =>{
     icon.classList.toggle("close");
-    navbar.toggleAttribute("overlay");
+    navList.classList.toggle("data-overlay");
   });
 
 });
