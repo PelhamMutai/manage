@@ -77,6 +77,16 @@ select {
     --fs-p:0.72rem;
     --line-hight-p:1.5rem;
     --letter-spacing:0.5rem;
+
+    --size-100:0.1rem;
+    --size-200:0.25rem;
+    --size-300:0.5rem;
+    --size-400:0.75rem;
+    --size-500:1.0rem;
+    --size-600:1.25rem;
+    --size-700:1.5rem;
+    --size-800:1.75rem;
+    --size-900:2.0rem;
 }
 /* general styling */
 
@@ -85,6 +95,7 @@ body{
     background-color: var(--line-hight-p);
     font-family: 'Be Vietnam Pro', sans-serif;
     overflow-x: hidden;
+    
 }
 .wrapper{
     max-width: 1029px;
@@ -97,7 +108,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:50px 120px 0 120px;
+    padding:30px 120px 0 120px;
 }
  ul li{
     display: inline;
@@ -157,7 +168,7 @@ ul a:hover{
     gap: 10px;
     justify-content: center;
     align-items: center;
-    padding: 30px 120px;
+    padding: 70px 120px;
 }
 .main h1{
     color: var(--Dark-Blue);
@@ -169,8 +180,8 @@ ul a:hover{
     font-size:12px;
     line-height: 20px;
     color: var(--Dark-Grayish-Blue);
-    padding-bottom: 20px;
-    width: 260px;
+    
+    
 }
 .main-txt button{
     border: none;
@@ -182,22 +193,24 @@ ul a:hover{
     box-shadow: 1px 4px 13px var(--button-shadow);
 }
 .illustration-intro{
-position: relative;
+
 }
 .intro{
     position: absolute;
-    top: -170px;
-    right: -290px;
     z-index: -1;
-}
-.intro img{
-    width: 70%;
+    width: 550px;
+    top: -110px;
+    right: -10px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    
 }
 .items-txt img{
     position: absolute;
     left: -190px;
-    top: 730px;
+    top: 770px;
     width: 40%;
+    z-index: -1;
 }
 
 /* numbered-items */
@@ -217,7 +230,6 @@ position: relative;
     font-size: var(--fs-p);
     line-height: var(--line-hight-p);
     color: var(--Dark-Grayish-Blue);
-    width: 250px;
 }
 .items-list{
     counter-reset: count;
@@ -237,8 +249,8 @@ position: relative;
     color: var(--Dark-Blue);
 }
 .items-list p{
-    font-size: var(--fs-p);
-    line-height: 16px;
+    font-size: 10px;
+    line-height:22px;
     color: var(--Dark-Grayish-Blue);
     padding-top: 12px;
     padding-bottom: 20px;
@@ -405,8 +417,18 @@ display: block;
         padding: 20px 20px;
     }
    .main-txt h1{
-        font-size: 40px;
+        font-size: 29px;
+    
     }
+    .main p{
+        width: 100%;
+        text-align: center;
+    }
+    .number h5{
+        background-color: var(--Very-Pale-Red);
+        font-size: 11px;
+    }
+    
     
     .header{
         padding:20px 20px;
@@ -414,12 +436,17 @@ display: block;
     
     .items-txt h2{
         text-align: center;
+       
     }
     .items-txt p{
         text-align: center;
+       width: 100%;
     }
     .items-list p{
         padding-left: 5px;
+    }
+    .items-txt img{
+        display: none;
     }
     .icon-hamburger{
         display: block;
@@ -431,14 +458,14 @@ display: block;
     }
     .navbar{  
         height: 0;
-        z-index: 99999;
+        z-index: 1000;
         position: fixed;
-        inset: 90px  25px;
+        inset: 80px  25px;
         display: block;
       overflow: hidden;
       border-radius: 5px;
-      background-color: rgb(245, 241, 247);
-      box-shadow:5px 250px 1000vmax rgb(77, 77, 80), 0 0 1000vmax rgb(153, 153, 158);
+      background-color: white;
+      box-shadow:50px 250px  1000vmax rgb(107, 107, 109), -50px 250px 1000vmax rgb(172, 172, 180);
       
     }
 
@@ -480,6 +507,7 @@ display: block;
     }
     .numbered-items{
         grid-template-columns: 1fr;
+        padding: 0 20px;
     }
     .carousel-footer{
         flex-direction: column;
@@ -518,6 +546,7 @@ display: block;
     }
     .footer-nav li a{
         font-size: 8px;
+        text-align:left;
 
     }
     .social-icon{
