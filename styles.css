@@ -180,6 +180,8 @@ ul a:hover{
     font-size:12px;
     line-height: 20px;
     color: var(--Dark-Grayish-Blue);
+    width: 270px;
+    padding-bottom: 15px;
     
     
 }
@@ -230,6 +232,7 @@ ul a:hover{
     font-size: var(--fs-p);
     line-height: var(--line-hight-p);
     color: var(--Dark-Grayish-Blue);
+    width: 250px;
 }
 .items-list{
     counter-reset: count;
@@ -249,7 +252,7 @@ ul a:hover{
     color: var(--Dark-Blue);
 }
 .items-list p{
-    font-size: 10px;
+    font-size: var(--fs-p);
     line-height:22px;
     color: var(--Dark-Grayish-Blue);
     padding-top: 12px;
@@ -334,6 +337,7 @@ display: block;
     color: var(--Dark-Grayish-Blue);
     text-align: center;
     padding-bottom: 40px;
+    width: 250px;
 }
 .slider-btn button{
     border: none;
@@ -435,7 +439,8 @@ display: block;
     }
     
     .items-txt h2{
-        text-align: center;
+        text-align:center;
+       
        
     }
     .items-txt p{
@@ -465,7 +470,7 @@ display: block;
       overflow: hidden;
       border-radius: 5px;
       background-color: white;
-      box-shadow:50px 250px  1000vmax rgb(107, 107, 109), -50px 250px 1000vmax rgb(172, 172, 180);
+      box-shadow:100px 250px  1000vmax rgb(151, 151, 155), -100px 250px 1000vmax rgb(151, 151, 155);
       
     }
 
@@ -515,9 +520,7 @@ display: block;
     .nav-item a{
         text-align: center;
     }
-    .slider-img p{
-        width: 180px;
-    }
+
     .carousel-footer-text{
         text-align: center;
         padding-bottom: 10px;
