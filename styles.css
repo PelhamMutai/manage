@@ -73,6 +73,7 @@ select {
     --Very-Pale-Red: hsl(13, 100%, 96%);
     --Vary-Light-Gray: hsl(0, 0%, 98%);
     --button-shadow:rgb(203, 132, 132);
+    --buttont-hover: hsl(12, 83%, 73%);
 
     --fs-p:0.72rem;
     --line-hight-p:1.5rem;
@@ -152,13 +153,13 @@ ul a:hover{
 .nav-toggle .icon-close{
     display: none;
 }
-.nav-item a{
-    font-size:var(--fs-p);
+.navbar a{
+    font-size:7px;
     color: var(--Dark-Blue);
     font-weight: 700;
 }
-.nav-item a:hover{
-    color: var(--Bright-Red);
+.navbar a:hover{
+    color: var(--Dark-Grayish-Blue);
 }
 /* main */
 
@@ -194,9 +195,7 @@ ul a:hover{
     padding: 10px 20px;
     box-shadow: 1px 4px 13px var(--button-shadow);
 }
-.illustration-intro{
 
-}
 .intro{
     position: absolute;
     z-index: -1;
@@ -221,7 +220,7 @@ ul a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    padding:20px 120px;
+    padding: 0 120px 100px 120px;
 }
 .items-txt h2{
     padding-bottom: 20px;
@@ -349,7 +348,7 @@ display: block;
     box-shadow: 1px 4px 13px var(--button-shadow);
 }
 .slider-btn{
-    padding-bottom: 20px;
+    padding-bottom: 120px;
     text-align: center;
 }
 .a11y-slider-dots li button.active{
@@ -546,6 +545,7 @@ display: block;
     }
     .footer-nav{
          grid-area:footer-nav;
+         margin-inline: auto;
     }
     .footer-nav li a{
         font-size: 8px;
@@ -561,8 +561,7 @@ display: block;
     }
     .logo{
         grid-area: logo;
-        width: 180px;
-        text-align: center;
+        margin-inline: auto;
     }
     .carousel-footer-btn button{
         font-size: 3px;
@@ -580,6 +579,16 @@ display: block;
     .logo-img img{
         width: 80px;
     }
+    input[type="email"]{
+    padding: 7px 5px;
+    border-radius: 20px;
+    font-size: 8px;
+}
+.icon { 
+    width: 15px; 
+    height: 15px;
+    margin: .5em;
+  }
 
 }
 
@@ -619,6 +628,10 @@ display: block;
     padding: 10px 20px;
     box-shadow: 1px 4px 13px var(--Bright-Red);
 }
+.carousel-footer-btn button:hover{
+    color: var(--buttont-hover);
+    background-color: var(--Vary-Light-Gray);
+}
 .carousel-footer-text img{
     padding-left: 100px;
 }
@@ -630,7 +643,7 @@ display: block;
     text-align: center;
     background-color:var(--Very-Dark-Blue) ;
     color: var(--Vary-Light-Gray);
-    padding: 20px 120px;
+    padding: 30px 120px;
 }
 .footer .social-icon  div img:hover{
     cursor: pointer;
@@ -639,14 +652,16 @@ display: block;
 .footer-nav{
     grid-area: footer-nav;
 }
-.footer-nav li .active{
-    color: blue;
-}
 .footer-nav li a:hover{
     color: var(--Bright-Red);
 }
 
-
+.icon { 
+    width: 15px; 
+    height: 15px;
+    margin: .1em;
+    fill: var(--Vary-Light-Gray);
+  }
 
 .footer-nav ul{
     color: var(--Vary-Light-Gray);
@@ -657,7 +672,7 @@ display: block;
     text-decoration: none;
     color: var(--Dark-Grayish-Blue);
     line-height: 3px;
-    font-size: 6px;
+    font-size: 8px;
 }
 .footer-form{
     display: flex;
@@ -666,7 +681,7 @@ display: block;
 }
 .copywright{
     grid-area:copywright ;
-    font-size: 6px;
+    font-size: 8px;
     color: var(--Dark-Grayish-Blue);
 
 }
@@ -684,7 +699,14 @@ input[type="email"]{
     padding: 7px 11px;
     box-shadow: 1px 4px 13px var(--Dark-Blue);
 }
-
-    
+.social-icon .icon{ 
+    cursor: pointer;
+}
+ .icon:hover{
+    fill: var(--Bright-Red);
+ }
+ button:hover{
+    background-color: var(--buttont-hover);
+ }
 
 
