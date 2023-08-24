@@ -100,7 +100,7 @@ body{
 }
 .wrapper{
     max-width: 1029px;
-   margin: 0 auto;
+   margin:0 auto;
 }
 
 /* header */
@@ -220,7 +220,7 @@ ul a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    padding: 0 120px 100px 120px;
+    padding: 0 120px 80px 120px;
 }
 .items-txt h2{
     padding-bottom: 20px;
@@ -272,7 +272,10 @@ display: block;
 
 
 /* slider */
-
+.carousel h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
 .slider {
     display: flex;
     gap: 20px;
@@ -336,7 +339,7 @@ display: block;
     color: var(--Dark-Grayish-Blue);
     text-align: center;
     padding-bottom: 40px;
-    width: 250px;
+    width: 245px;
 }
 .slider-btn button{
     border: none;
@@ -375,7 +378,25 @@ display: block;
     .slider > * {
         width: 33.33%;
       }
-      
+      .carousel-footer{
+        margin-inline:auto;
+        display: flex;
+        background-color: var(--Bright-Red);
+        padding: 30px 120px;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url("images/bg-simplify-section-desktop.svg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position-y:bottom;
+        background-position-x:9rem;
+    }
+    .carousel-footer-text h2{
+        color: var(--Vary-Light-Gray);
+        width: 300px;
+        font-size: 20px;
+        font-weight: 700;
+    }
       .footer{
         padding: 20px 40px;
         background-color:var(--Very-Dark-Blue) ;
@@ -409,6 +430,13 @@ display: block;
     .footer-nav ul li a{
         text-align: start;
     }
+    .footer{
+        margin: 0 auto;
+        text-align: center;
+        background-color:var(--Very-Dark-Blue) ;
+        color: var(--Vary-Light-Gray);
+        padding: 30px 120px;
+    }
     }
 
     /* mobile */
@@ -421,10 +449,11 @@ display: block;
     }
    .main-txt h1{
         font-size: 29px;
-    
+        
     }
     .main p{
         width: 100%;
+        padding: 10px 30px;
         text-align: center;
     }
     .number h5{
@@ -439,12 +468,14 @@ display: block;
     
     .items-txt h2{
         text-align:center;
+        padding: 10px 40px;
        
        
     }
     .items-txt p{
         text-align: center;
-       width: 100%;
+        margin-inline: auto;
+       
     }
     .items-list p{
         padding-left: 5px;
@@ -469,7 +500,7 @@ display: block;
       overflow: hidden;
       border-radius: 5px;
       background-color: white;
-      box-shadow:100px 250px  1000vmax rgb(151, 151, 155), -100px 250px 1000vmax rgb(151, 151, 155);
+      box-shadow:100px 250px  1000vmax rgb(116, 116, 119), -100px 250px 1000vmax rgb(117, 117, 126);
       
     }
 
@@ -520,13 +551,17 @@ display: block;
         text-align: center;
     }
 
-    .carousel-footer-text{
+    .carousel-footer-text h2{
+        color: var(--Vary-Light-Gray);
+        font-size: 30px;
+        font-weight: 700;
         text-align: center;
-        padding-bottom: 10px;
+        padding: 30px 20PX;
     }
+    
     .footer{
         display: grid;
-        gap: 20px;
+        gap: 15px;
        margin: 0 auto;
         justify-content: center;
         align-items: center;
@@ -538,6 +573,13 @@ display: block;
         "copywright";
     
     }
+    .footer{
+        margin: 0 auto;
+        text-align: center;
+        background-color:var(--Very-Dark-Blue) ;
+        color: var(--Vary-Light-Gray);
+        padding: 30px 10px;
+    }
     .input-email{
         grid-area: input-email;
         margin-top: 20px;
@@ -548,10 +590,24 @@ display: block;
          margin-inline: auto;
     }
     .footer-nav li a{
-        font-size: 8px;
+        font-size: 7px;
         text-align:left;
 
     }
+    .carousel-footer{
+        margin-inline:auto;
+        display: flex;
+        background-color: var(--Bright-Red);
+        padding: 30px 10px;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url("images/bg-simplify-section-desktop.svg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position-y:bottom;
+        background-position-x:9rem;
+    }
+    
     .social-icon{
         grid-area: social-icon;
         display: flex;
@@ -566,11 +622,16 @@ display: block;
     .carousel-footer-btn button{
         font-size: 3px;
     }
-   
+    
+    .carousel-footer{
+        margin: 0 auto ;
+        padding: 15px 10px;
+    }
     .copywright{
         grid-area: copywright;
         margin-bottom: 20px;
         text-align: center;
+        font-size: 7px;
     }
     
     .input-email{
@@ -596,29 +657,8 @@ display: block;
 
 /* carousel */
 
-.carousel-footer{
-    display: flex;
-    background-color: var(--Bright-Red);
-    padding: 30px 120px;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url("images/bg-simplify-section-desktop.svg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position-y:bottom;
-    background-position-x:9rem;
-}
-.carousel h2{
-    color: var(--Dark-Blue);
-    text-align: center;
-    padding-bottom: 20px;
-}
-.carousel-footer-text h2{
-    color: var(--Vary-Light-Gray);
-    width: 300px;
-    font-size: 20px;
-    font-weight: 700;
-}
+
+
 .carousel-footer-btn button{
     border: none;
     background-color:var(--Very-Pale-Red);
@@ -638,13 +678,8 @@ display: block;
 
 /* footer */
 
-.footer{
-    margin: 0 auto;
-    text-align: center;
-    background-color:var(--Very-Dark-Blue) ;
-    color: var(--Vary-Light-Gray);
-    padding: 30px 120px;
-}
+
+
 .footer .social-icon  div img:hover{
     cursor: pointer;
     background-color: var(--Bright-Red);
